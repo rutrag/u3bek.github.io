@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <style>
+            * {box-sizing: border-box;
+            }
+            
+            .left {
+                float:left;
+                width: 30%
+            }
+
+            .center {
+                float: left;
+                width: 30%
+            }
+
+            .right {
+                float:left;
+                width: 40%;
+            }
+
+            @media screen and (max-width: 800px) {
+                .left, .center, .right {
+                    width: 100%;
+                }
+            }
+
+            table, tr, td, th {
+                padding: 5px;
+                border: 2px solid dodgerblue;
+                margin: 10px;
+            }
+            a {
+                border-radius:10px;
+                color: white;
+                padding: 10px 10px;
+                margin: 10px;
+                display: inline-block;
+            }
+            a:link, a:visited {
+                background-color: rgb(0, 134, 134);
+                
+            }
+            #trhover:hover {
+                background-color:violet;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <a href="index.htm">Main page</a>
+        <a href="HTML tables1.htm">Page 1</a>
+        <a href="HTML tables2.htm">Page 2</a>
+        <a href="HTML tables3.htm">Page 3</a>
+        <hr>
+        <table> <!-- Table №1 -->
+            <caption>A table of HTLM elements (is created by camption tag)</caption>
+            <tr>
+                <th>HTML elements</th>
+                <th>Property</th> 
+            </tr>
+            <tr>
+                <td style="border: 5px solid grey">border</td>
+                <td style="border: 5px solid grey;">5px solid grey</td>
+            </tr>
+            <tr >
+                <td style="border-radius: 20px;">border-radius</td>
+                <td style="border-radius: 20px;">20px</td>
+            </tr>
+            <tr>
+                <td>border-style</td>
+                <td style="border-style:dotted;">dotted</td>
+                <td style="border-style:dashed;">dashed</td>
+                <td style="border-style:inset;">solid</td>
+            </tr>
+            <tr>
+                <td>background-color</td>
+                <td style="background-color:lightgray;">lightgray</td>
+                <td style="background-color:black;">black</td>
+                <td style="background-color:violet;">violet</td>
+            </tr>
+            <tr>
+                <td>text-align</td>
+                <td style="text-align:left">left</td>
+                <td style="text-align:right">right</td>
+                <td style="text-align:center"></td>
+            </tr>
+            <tr>
+                <td>colspan</td>
+                <td colspan="3">colspan="3" without using style</td>
+            </tr>
+            <tr>
+                <td>rowspan</td>
+                <td rowspan="2">rowspan="2"</td>
+            </tr>
+            <tr>
+                <td>padding-top</td>
+                <td style="padding-top:20px">20px</td>
+            </tr>
+            <tr>
+                <td>padding-bottom</td>
+                <td style="padding-bottom:20px">20px</td>
+            </tr>
+            <tr>
+                <td>padding-left</td>
+                <td style="padding-left:20px">20px</td>
+            </tr>
+            <tr>
+                <td>padding-right</td>
+                <td style="padding-right:20px">20px</td>
+            </tr>
+            <tr>
+                <td>border-bottom</td>
+                <td style="border-bottom:1px dotted blue">1px dotted blue</td>
+            </tr>
+            <tr id="trhover">
+                <td>:hover</td>
+                <td>tr:hover</td>
+                <td>background-color</td>
+                <td>violer</td>
+            </tr>
+            
+        </table>
+
+        <div class="center">
+            <table style="border-collapse:collapse;">
+                <tr>
+                    <th>Firstname</th>
+                    <td>Jon</td>
+                    <td>Kate</td>
+                </tr>
+                <tr>
+                    <th>Last name</th>
+                    <td>Red</td>
+                    <td>Wise</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>33</td>
+                    <td>17</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="right">
+            <table style="border-collapse:collapse;"> <!-- Table №3 -->
+                <tr>
+                    <td style="width:70%">table width 100% with first td</td>
+                    <td>width</td>
+                    <td>70%</td>
+                </tr>
+                <tr style="height:100px">
+                    <td>second tr</td>
+                    <td>height</td>
+                    <td>200px</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="left">
+            <table style="border-collapse:collapse; margin-top: 10px;"> <!-- Table №2 -->
+                <caption>This table uses a brorder-collapse tag</caption>
+                <tr>
+                    <th>HTML elements</th>
+                    <th>Property</th>
+                </tr>
+                <tr>
+                    <td>borde-collapse</td>
+                    <td>collapse</td>
+                </tr>
+                <tr>
+                    <td>border-color</td>
+                    <td style="border-color:purple;">purple</td>
+                    <td style="border-color:yellow;">yellow</td>
+                </tr>
+            </table>
+        </div>
+
+        <table style="border-spacing: 20px">
+            <tr>
+                <td>table</td>
+                <td>style=</td>
+                <td>'border-spacing"</td>
+                <td>20px</td>
+            </tr>
+        </table>
+        <hr>
+        <table  style="border-collapse:collapse; width:100%">
+            <caption>camption with table width:100%</caption>
+            <tr>
+                <td>table width 100%</td>
+                <td>width</td>
+                <td>100%</td>
+            </tr>
+        </table>
+        <div style="background-color:lightgrey; width:500px">
+            <div style="border-radius: 10px; background-color: grey; padding:10px;
+            margin: 10px; color:white; font-size: 16px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Following tag is used to display a web page within a web page.
+                Click on the<a href="HTML tables2.htm" target="iframe_1">tab2</a>,
+                then the <a href=""HTML tables3.htm target="iframe_1">tab3</a>
+                <button type="button" onclick="hiddentext()">click me</button>
+                <button type="button" onclick="hiddentext2()">or me</button>
+                <p id="JS1" style="border-radius: 10px;padding:0px 50px; text-align: center; background-color:rgb(100, 134, 134)">_</p>
+
+                <script>
+                    function hiddentext() { 
+                    document.getElementById("JS1").innerHTML = "Just smile";
+
+                    document.getElementById("JS1").style. backgroundColor ="rgb(50, 134, 134)"
+                    }
+                </script>
+
+                <script>
+                    function hiddentext2() {
+                        document.getElementById("JS1").innerHTML = "and wave";
+
+                        document.getElementByID("JS1").style. backgroundColor ="rgb(50, 134, 134)"
+                    }
+                </script>
+        </div>
+            <iframe src="HTML tables2.htm" title="table2" name="iframe_1"
+            style="height:450px; width:470px; border:double;
+            border-color: grey; margin: 0px 10px;
+            background-color:rgb(230, 230, 230);">
+            </iframe>
+        </div>
+        <address>
+            Was created by Gar
+        </address>
+
+    </body>
