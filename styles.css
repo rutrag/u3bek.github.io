@@ -1,3 +1,11 @@
+
+header h1 {
+	color:white;
+	margin:10px;
+	padding:10px;
+	background-color:rgba(0, 255, 255, 0.3)
+}
+
 pre {
 	border: 3px solid DodgerBlue;
 	padding: 30px;
@@ -19,31 +27,47 @@ img {
 	margin-left: 50px;
 }
 
-#ulmain, #ul2 {list-style-type: none;
+#ulmain, #ul2 {
+	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding-left: 1%;
 	overflow: hidden;
-
 }
 
-#li1 {
+.li1 {
 	float:left;
+	width: 16.5%;
 }
 
-a {
+.li2 {
+	float:left;
+	width:33%;
+}
+
+#li2 {
+	width:100%;
+}
+
+.li1 a {
 	background-color: rgb(187, 56, 187);
 	color: white;
 	text-decoration:none;
 	padding: 10px 15px;
 	text-align:center;
-	display:inline-block;
+	display:block;
+}
+
+.li2 a {
+	background-color: grey;
+	color: white;
+	text-decoration:none;
+	padding: 10px 15px;
+	text-align:center;
+	display:block;
 }
 
 a:hover {
 	background-color: rgb(139, 29, 139);
-}
-a:link{
-	background-color: rgb(75, 11, 75);
 }
 
 th, td {

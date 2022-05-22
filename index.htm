@@ -34,36 +34,38 @@ pre {
 		<!-- Wellcom in my first own site.
 		This site was created to learn HTML -->
 
-		<header style="background-color:gray; border: 3px solid silver">
-			<h1 style="background-color:Tomato;">HTML learning <small style="background-color:rgba(255, 255, 255, 0.5);">style="background-color:Tomato;"</small></h1>
-		</header>
-
-		<hr>
-		<header>
-			<ul id="ulmain">
-				<li id="li1"><a href="index.htm" title="Go to HTML learning main page"> Main</a></li>
-				<li id="li1"><a href="tags.htm" title="Go to HTML tags"> HTML tags</a></li>
-				<li id="li1"><a href="links.htm" title="Go to HTML links"> HTML links</a></li>
-				<li id="li1"><a href="Style Attribute.htm" title="Go to HTML styles"> HTML styles</a></li>
-				<li id="li1"><a href="HTML tables1.htm">HTML tables</a></li>
-				<li id="li1"><a href="about me.html" title="Go to short discribe about me"> About me</a></li>
-			</ul>
+		<div style="background-color:lightgrey;">
+			<header style="background-color:gray; border: 3px solid silver">
+				<h1><span style="padding:5px; border-radius:5px; border:solid 1px rgb(206, 206, 206); margin:20px; background-color:grey; color:rgb(187, 56, 187); text-shadow: 1px 1px rgb(0, 0, 0); ">HTML</span> <small>learning</small></h1>
+			</header>
 			<hr>
-			<ul id="ul2">
-				<li><img src="images/Setting.gif" height="40px" width="40px" style="float:left; vertical-align:middle; margin:0px;"></li>
-				<li style="float:right;"><img src="images/Setting.gif" height="40px" width="40px" style="vertical-align:middle; margin:0px;"></li>
-				<li><a href="#img1" style="float:right; padding: 10px 25px; margin:2px; background-color: gray"> jump to image</a></li>
-				<li><a href="#I" style="float:right; padding: 10px 25px; margin:2px; background-color: gray"> jump to about autor</a></li>
-				<li><a href="#table1" style="float:right; padding: 10px 25px; margin:2px; background-color: gray"> jump to a table</a></li>
-			</ul>
-		</header>
+			<header>
+				<nav>
+					<ul id="ulmain">
+						<li class="li1"><a href="index.htm" title="Go to HTML learning main page"> Main page</a></li>
+						<li class="li1"><a href="tags.htm" title="Go to HTML tags"> HTML tags</a></li>
+						<li class="li1"><a href="links.htm" title="Go to HTML links"> HTML links</a></li>
+						<li class="li1"><a href="Style Attribute.htm" title="Go to HTML styles"> HTML styles</a></li>
+						<li class="li1"><a href="HTML tables1.htm">HTML tables</a></li>
+						<li class="li1"><a href="about me.html" title="Go to short discribe about me"> About me</a></li>
+					</ul>
+				</nav>
+				<hr>
+				<ul id="ul2">
+					<li class="li2"><a href="#img1"> jump to image</a></li>
+					<li class="li2"><a href="#I"> jump to about autor</a></li>
+					<li class="li2"><a href="#table1"> jump to a table</a></li>
+				</ul>
+				<hr>
+			</header>
+		</div>
 
 		<button onclick="document.location='about me.html'"> JS about me </button>
 		<button type="button" onclick="document.location='HTML tables1.htm'"> JS Tables </button>
 		<button type="button" onclick="document.getElementById('date').innerHTML=Date()">What time is it?</button>
 		<p1 id="date"></p1>
 		<div style="margin:10px">
-			<button type="button" onclick="emoji1(0)">click me softly</button>
+			<button type="button" onclick="emoji1(0)">click me softly&#128151</button>
 			<script>
 				function emoji1(sw) {
 					var pic;
@@ -81,7 +83,7 @@ pre {
 			</script>
 			<noscript>Turn on JavaScript into you browser</noscript>
 			<img id="Emoji" src="emoji/)).png" style="width:200px">
-			<button type="button" onclick="emoji1(1)">click me rudely</button>
+			<button type="button" onclick="emoji1(1)">click me rudely&#128520</button>
 		</div>
 
 
@@ -96,10 +98,8 @@ pre {
 
 		<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
 
-		<p style="color:green"> This text is green used by the style attribute. (style="color:green") </p>
-
 		<img id="img1" src="images/img_the_scream.jpg" alt="corridor" width="300px" height="300px">
-		<p2><br><cite>The Scream</cite> (< cite>< /cite>) <small>by Edvard Munch. Painted in 1893.</small></p2>
+		<p2><br><cite>The Scream</cite> (&ltcite&gt&lt/cite&gt) <small>by Edvard Munch. Painted in 1893.</small></p2>
 
 		<p title='John "ShotGun" Nelson'>	John with double quotes.
 		(title='John "ShotGun" Nelson')</p>
@@ -134,7 +134,7 @@ pre {
 			</tr>
 			<tr>
 				<td>Seattle</td>
-				<td>USA</td>
+				<td>U&nbsp&nbsp&nbsp&nbsp&nbspS&nbsp&nbsp&nbsp&nbsp&nbspA</td>
 				<td>English</td>
 				<td>800000</td>
 			</tr>
@@ -227,14 +227,12 @@ line break by < pre>< /pre> element </pre>
 
 		<hr>
 
-		<footer>
-			<address>
-				Written by <a id="I" href="https://vk.com/poccua" target="_blank">Artur G.</a><br>
-				Krasnodar<br>
-				Russia
-			<small> < address>< /address></small>
-			</adress>
-		</footer>
+		<address>
+			Written by <a id="I" href="https://vk.com/poccua" target="_blank">Artur G.</a><br>
+			Krasnodar<br>
+			Russia
+		<small> < address>< /address></small>
+		</adress>
 
 
 	</boby>
