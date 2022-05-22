@@ -6,6 +6,17 @@ header h1 {
 	background-color:rgba(0, 255, 255, 0.3)
 }
 
+#logo {
+	padding:5px;
+	margin:10px;
+	border-radius:5px;
+	border:solid 1px rgb(206, 206, 206);
+	background-color:grey;
+	color:rgb(187, 56, 187);
+	text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+
 pre {
 	border: 3px solid DodgerBlue;
 	padding: 30px;
