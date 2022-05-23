@@ -34,20 +34,16 @@ pre {
 		<!-- Wellcom in my first own site.
 		This site was created to learn HTML -->
 
-		<div style="background-color:lightgrey;">
-			<header style="background-color:gray; border: 3px solid silver">
-				<h1><span id="logo">HTML</span><small>learning</small>
-					<form style="float:right; font-size: small; width:50%">
-						<label for="login">login</label>
+			<header>
+				<h1><span id="logo">HTML</span><small style="float:inline-end">learning</small>
+					<form action="/action_page.php">
 						<input class="login" type="text" id="login" name="login" value="login">
-						<label for="pass">pass</label>
 						<input class="login" type="text" id="pass" value="password">
+						<input class="login_b" type="submit" value="Sign In">
 					</form>
 				</h1>
-
 			</header>
 			<hr>
-			<header>
 				<nav>
 					<ul id="ulmain">
 						<li class="li1"><a href="index.htm" title="Go to HTML learning main page"> Main page</a></li>
@@ -65,8 +61,6 @@ pre {
 					<li class="li2"><a href="#table1"> jump to a table</a></li>
 				</ul>
 				<hr>
-			</header>
-		</div>
 
 		<button onclick="document.location='about me.html'"> JS about me </button>
 		<button type="button" onclick="document.location='HTML tables1.htm'"> JS Tables </button>
@@ -94,17 +88,35 @@ pre {
 			<button type="button" onclick="emoji1(1)">click me rudely&#128520</button>
 		</div>
 
-
-
-
 		<p1><q>To be rather than to seem</q> is an english translate to the latin quote:</p1>
 		<blockquote cite="https://en.wikipedia.org/wiki/Esse_quam_videri">
 		Esse quam videri
 		</blockquote>
 
+			<div class="fav_plc1">
+				<p>Check your favorite place</p>
+				<form class="form1">
+					<input type="radio" id="pussy" name="fav_plc" value="pussy">
+					<label for="pussy">Pussy</label>
+					<input type="radio" id="ass" name="fav_plc" value="ass">
+					<label for="ass">ass</label>
+					<input type="radio" id="mouth" name="fav_plc" value="mouth">
+					<lable for="mouth">mouth</lable>
+				</form>
+			</div>
+			<div class="fav_plc2">
+				<p>Check your alternative favorite place</p>
+				<form class="form2">
+					<input type="checkbox" id="l_hand" value="left hand">
+					<lable for="l_hand">left hand</lable>
+					<input type="checkbox" id="r_hand" value="right hand">
+					<lable for="l_hand">right hand</lable>
+					<input type="checkbox" id="hands" value="hands">
+					<lable for="hands">hands</lable>
+				</form>
+			</div>
 
 
-		<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
 
 		<img id="img1" src="images/img_the_scream.jpg" alt="corridor" width="300px" height="300px">
 		<p2><br><cite>The Scream</cite> (&ltcite&gt&lt/cite&gt) <small>by Edvard Munch. Painted in 1893.</small></p2>
