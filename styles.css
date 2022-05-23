@@ -21,7 +21,7 @@ header h1 {
 	float:inline-start;
 }
 
-h1 form {
+.l_form {
 	float: right;
 }
 
