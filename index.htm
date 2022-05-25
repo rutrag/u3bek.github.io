@@ -20,13 +20,6 @@
 		 href="style.css" is used to link to a style sheet located in the same folder as the current page
 	-->
 
-	<style>
-pre {
-	background-color: gainsboro;
-}
-
-	</style>
-
 </head>
 
 	<body>
@@ -34,7 +27,7 @@ pre {
 		<!-- Wellcom in my first own site.
 		This site was created to learn HTML -->
 
-			<header style="background-color:gray; border: 3px solid silver">
+			<header>
 				<h1><span id="logo">HTML</span><small style="float:inline-end">learning</small>
 					<form class="l_form" action="/action_page.php">
 						<input class="login" type="text" id="login" name="login" value="login">
@@ -48,7 +41,7 @@ pre {
 					<ul id="ulmain">
 						<li class="li1"><a href="index.htm" title="Go to HTML learning main page"> Main page</a></li>
 						<li class="li1"><a href="tags.htm" title="Go to HTML tags"> HTML tags</a></li>
-						<li class="li1"><a href="links.htm" title="Go to HTML links"> HTML links</a></li>
+						<li class="li1"><a href="forms.htm" title="Go to HTML forms"> HTML forms</a></li>
 						<li class="li1"><a href="Style Attribute.htm" title="Go to HTML styles"> HTML styles</a></li>
 						<li class="li1"><a href="HTML tables1.htm">HTML tables</a></li>
 						<li class="li1"><a href="about me.html" title="Go to short discribe about me"> About me</a></li>
@@ -93,40 +86,39 @@ pre {
 		Esse quam videri
 		</blockquote>
 
-			<div class="fav_plc1">
-				<p>Check your favorite place</p>
-				<form class="form1">
-					<input type="radio" id="pussy" name="fav_plc" value="pussy">
-					<label for="pussy">Pussy</label>
-					<input type="radio" id="ass" name="fav_plc" value="ass">
-					<label for="ass">ass</label>
-					<input type="radio" id="mouth" name="fav_plc" value="mouth">
-					<lable for="mouth">mouth</lable>
-				</form>
-			</div>
-			<div class="fav_plc2">
-				<p>Check your alternative favorite place</p>
-				<form class="form2">
-					<input type="checkbox" id="l_hand" value="left hand">
-					<lable for="l_hand">left hand</lable>
-					<input type="checkbox" id="r_hand" value="right hand">
-					<lable for="l_hand">right hand</lable>
-					<input type="checkbox" id="hands" value="hands">
-					<lable for="hands">hands</lable>
-				</form>
-			</div>
+		<div class="fav_plc1">
+			<p>Choose your favorite place</p>
+			<form class="form1">					<input type="radio" id="pussy" name="fav_plc" value="pussy">
+				<label for="pussy">Pussy</label>
+				<input type="checkbox" id="ass" name="fav_plc" value="ass">
+				<label for="ass">ass</label>
+				<input type="text" id="mouth" name="fav_plc" value="mouth">
+				<lable for="mouth">mouth</lable>
+			</form>
+		</div>
+		<div class="fav_plc2">
+			<p>Select the side of conflict</p>
+			<form action="/action_page.php" class="form2">
+				<label for="countries">&#9755</label>
+				<select id="countries" name="counties" size="3">
+					<option value="USA">USA</option>
+					<option value="China">China</option>
+					<option value="Russia" selected>Russia</option>
+					<option value="India">India</option>
+					<option value="UK">UK</option>
+					<option value="France">France</option>
+					<option value="Germany">Germany</option>
+					<option value="Saudi Arabia">Saudi Arabia</option>
+					<option value="Japan">Japan</option>
+					<option value="South Korea">South Korea</option>
+					<option value="Italy">Italy</option>
+					<option value="Australia">Australia</option>
+				</select>
+				<p id="countries_b"><input type="submit" value="Ok"></p>
+			</form>	
+		</div>
 
-
-
-		<img id="img1" src="images/img_the_scream.jpg" alt="corridor" width="300px" height="300px">
-		<p2><br><cite>The Scream</cite> (&ltcite&gt&lt/cite&gt) <small>by Edvard Munch. Painted in 1893.</small></p2>
-
-		<p title='John "ShotGun" Nelson'>	John with double quotes.
-		(title='John "ShotGun" Nelson')</p>
-		<p title="John 'ShotGun' Nelson">	John with single quotes.
-		(title="John 'ShotGun' Nelson")</p>
-
-		<div>
+		<div class="f_img">
 			<img src="images/balls.jpg" alt="balls" title="click on football ball"
 			usemap="#ballsmap" style="height: 200px; width: 400px">
 			
