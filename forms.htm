@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>HTML learning</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/HTML_forms.css">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="description" content="The practice of html learning">
+	<meta name="autor" content="Artur Gadelshin">
+	<meta http-equiv="refresh" content="60">
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<base target="_top">
+
+
+
+	<!-- href="https://yoursite.com" is used for full URL to link to a style sheet
+		 href="/yourfolder/styles.css" is used to link to a sheet located in the html folder on the current web site
+		 href="style.css" is used to link to a style sheet located in the same folder as the current page
+	-->
+
+</head>
+
+	<body>
+
+		<!-- Wellcom in my first own site.
+		This site was created to learn HTML -->
+
+		<header>
+			<h1><span id="logo">HTML</span><small style="float:inline-end">learning</small>
+				<form class="l_form" action="/action_page.php">
+					<input class="login" type="text" id="login" name="login" value="login">
+					<input class="login" type="text" id="pass" value="password">
+					<input class="login_b" type="submit" value="Sign In">
+				</form>
+			</h1>
+		</header>
+		<hr>
+		<nav>
+			<ul id="ulmain">
+				<li class="li1"><a href="index.htm" title="Go to HTML learning main page"> Main page</a></li>
+				<li class="li1"><a href="tags.htm" title="Go to HTML tags"> HTML tags</a></li>
+				<li class="li1"><a href="forms.htm" title="Go to HTML forms"> HTML forms</a></li>
+				<li class="li1"><a href="Style Attribute.htm" title="Go to HTML styles"> HTML styles</a></li>
+				<li class="li1"><a href="HTML tables1.htm">HTML tables</a></li>
+				<li class="li1"><a href="about me.html" title="Go to short discribe about me"> About me</a></li>
+			</ul>
+		</nav>
+		<hr>
+		<div class="fav_plc">
+			<p class="header_f">Choose your favorite place</p>
+			<form class="form1">					<input type="radio" id="pussy" name="fav_plc" value="pussy">
+				<label for="pussy">Pussy</label>
+				<input type="checkbox" id="ass" name="fav_plc" value="ass">
+				<label for="ass">ass</label>
+				<input type="text" id="mouth" name="fav_plc" value="mouth">
+				<lable for="mouth">mouth</lable>
+			</form>
+		</div>
+		<div class="fav_plc">
+			<p class="header_f">Select the side of conflict</p>
+			<form action="/action_page.php" class="form1">
+				<label class="sof" for="countries">&#9755</label>
+				<select class="sof" id="countries" name="counties" size="3">
+					<option value="USA">USA</option>
+					<option value="China">China</option>
+					<option value="Russia" selected>Russia</option>
+					<option value="India">India</option>
+					<option value="UK">UK</option>
+					<option value="France">France</option>
+					<option value="Germany">Germany</option>
+					<option value="Saudi Arabia">Saudi Arabia</option>
+					<option value="Japan">Japan</option>
+					<option value="South Korea">South Korea</option>
+					<option value="Italy">Italy</option>
+					<option value="Australia">Australia</option>
+				</select>
+				<p class="sof" id="countries_b"><input type="submit" value="Ok"></p>
+			</form>	
+		</div>
+		<div class="fav_plc">
+			<p class="header_f">Tell a bit about yourself</p>
+			<form class="form1" action="/action_page.php">
+				<textarea id="about_y" class="sof" name="message" row="15" colns="40">Once upon a time
+				</textarea>
+				<input class="sof" id="about_b" type="submit" value="send">
+			</form>
+		</div>
+
+		<div class="fav_plc">
+			<p class="header_f">Choose a color</p>
+			<form class="form1" action="/action_page.php">
+				<input id="color_s" list="colors">
+				<datalist id="colors">
+					<option value="white"></option>
+					<option value="black"></option>
+					<option value="red"></option>
+					<option value="blue"></option>
+					<option value="aqua"></option>
+					<option value="green"></option>
+				</datalist>
+				<input type="submit">
+			</form>
+		</div>
+
+		<div class="fav_plc">
+			<p class="header_f">Choose start money</p>
+			<form class="form1" action="/action_page.php"
+			oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+			<input type="number" id="a" name="a" value="150">
+			<span id="c"> 0 <input type="range" id="b" name="b" value=150> 100 </span>
+			
+			<output id="abc" name="x" for="a b">000</output>		
+			</form>
+		</div>
+		<br>
+		<footer>
+			<address>
+				Created by <a id="I" href="https://vk.com/poccua" target="_blank">Artur G.</a><br>
+			</adress>
+		</footer>
+
+	</boby>
+</html>

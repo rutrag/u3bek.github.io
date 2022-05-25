@@ -1,0 +1,175 @@
+header {
+	background-color:gray;
+	border: 3px solid silver
+}
+
+header h1 {
+	color:white;
+	margin:10px;
+	padding:10px;
+	background-color:rgba(0, 255, 255, 0.3)
+}
+
+#logo {
+	padding:5px;
+	margin:10px;
+	border-radius:5px;
+	border:solid 1px rgb(206, 206, 206);
+	background-color:grey;
+	color:rgb(187, 56, 187);
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	float:inline-start;
+}
+
+.l_form {
+	float: right;
+}
+
+.login {
+	width: 80px;
+}
+
+p1 {
+	font-family: counter;
+	font-size: 120%;
+	background-color: pink;
+	border: solid 1px purple;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+#ulmain, #ul2 {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 1%;
+	overflow: hidden;
+}
+
+#ulmain {
+	width: 100%;
+}
+
+.li1 {
+	float:left;
+	width: 16.5%;
+}
+
+.li2 {
+	float:left;
+	width:33%;
+}
+
+#li2 {
+	width:100%;
+}
+
+.li1 a {
+	background-color: rgb(187, 56, 187);
+	color: white;
+	text-decoration:none;
+	padding: 10px 15px;
+	text-align:center;
+	display:block;
+}
+
+.li2 a {
+	background-color: grey;
+	color: white;
+	text-decoration:none;
+	padding: 10px 15px;
+	text-align:center;
+	display:block;
+}
+
+a:hover {
+	background-color: rgb(139, 29, 139);
+}
+
+.header_f {
+    background-color: rgb(53, 161, 161);
+    border: outset 3px;
+    color: white;
+    padding: 4px 0%;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fav_plc {
+	padding: 10px;
+	margin: 10px;
+	background-color: lightgrey;
+    width: 51%;
+    float: left;
+    display: block;
+    border: groove 5px;
+}
+
+.form1 {
+	background-color: grey;
+	display: block;
+	padding: 10px;
+    margin: 10px;
+    float: left;
+    width:85%;
+    border: inset 2px;
+}
+
+#mouth {
+    width: 20%;
+}
+
+#countries_b {
+	margin: 16px 15px;
+}
+
+.sof {
+    float:left;
+    display: block;
+}
+
+#about_b {
+	margin: 16px 15px;
+}
+
+textarea {
+    width: 61%;
+    height: 45px;
+}
+
+#color_s {
+    width: 51%;
+}
+
+#a {
+    width: 20%;
+    float:left;
+    display: block;
+    margin: 1.5% 0%;
+    padding: 3px 0px;
+}
+
+#c {
+    float: left;
+    margin: 2% 3%;
+    background-color: white;
+    width: 48%;
+    padding: 0% 3%;
+}
+
+#b {
+    width: 55%;
+}
+
+#abc {
+    width: 12%;
+    margin: 2% 3%;
+    background-color: white;
+    display: block;
+    padding: 2px 1px;
+}
+
+footer {
+    float: left;
+    width: 100%;
+}
