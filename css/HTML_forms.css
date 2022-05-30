@@ -99,7 +99,7 @@ a:hover {
 	padding: 10px;
 	margin: 10px;
 	background-color: lightgrey;
-    width: 51%;
+    width: 91%;
     float: left;
     display: block;
     border: groove 5px;
@@ -111,11 +111,10 @@ a:hover {
 	padding: 10px;
     margin: 10px;
     float: left;
-    width:85%;
     border: inset 2px;
 }
 
-#mouth {
+#mouth, #tel {
     width: 20%;
 }
 
@@ -128,13 +127,17 @@ a:hover {
     display: block;
 }
 
-#about_b {
+#about_a, #about_c {
+	margin: 16px 15px;
+}
+
+#about_b, #about_d {
 	margin: 16px 15px;
 }
 
 textarea {
     width: 61%;
-    height: 45px;
+    height: 100px;
 }
 
 #color_s {
@@ -145,13 +148,14 @@ textarea {
     width: 20%;
     float:left;
     display: block;
-    margin: 1.5% 0%;
+    margin: 0px 0%;
     padding: 3px 0px;
+	border: none;
 }
 
 #c {
     float: left;
-    margin: 2% 3%;
+    margin: 0px 3%;
     background-color: white;
     width: 48%;
     padding: 0% 3%;
@@ -162,8 +166,8 @@ textarea {
 }
 
 #abc {
-    width: 12%;
-    margin: 2% 3%;
+    width: 30px;
+    margin: 10px 3%;
     background-color: white;
     display: block;
     padding: 2px 1px;
