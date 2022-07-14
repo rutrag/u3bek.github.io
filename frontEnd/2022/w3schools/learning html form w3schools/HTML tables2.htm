@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <link rel="icon" title="HTML tables" href="images/favicon.png">
+    <style>
+        table, tr, td, th {
+            padding: 5px;
+            border: 1px solid dodgerblue;
+            margin: 10px;
+        }
+        tr:nth-child(odd), td:nth-child(even) {
+            background-color: rgba(0, 218, 218, 0.2);
+        }
+
+        a {
+            padding: 12px;
+            display: inline-flex;
+            color: white;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        a:link, a:visited {
+            background-color: rgb(0, 134, 134);
+        }
+        a:active, a:hover {
+            background-color: aquamarine;
+        }
+        caption {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Combine Vertical and Horizontal Zebra Stripes</h1>
+    <a href="index.htm" style="border-style:double">Main page</a>
+    <a href="HTML tables1.htm" style="border-style:dashed;">Page 1</a>
+    <a href="HTML tables2.htm" style="border-style:dotted;">Page 2</a>
+    <a href="HTML tables3.htm" style="border-style:groove">Page 3</a>
+    <hr>
+
+    <table>
+        <caption>
+            Use tr:nth-child(odd), td:nth-child(even) to add a background-color on every other table row 
+        </caption>
+    <tr id="tab1">
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Age</th>
+        <th>sexual</th>
+        <th>gender</th>
+    </tr>
+    <tr id="tab3">
+        <td>Sasha</td>
+        <td>Grey</td>
+        <td>33</td>
+        <td>bi</td>
+        <td>f</td>
+    </tr>
+    <tr>
+        <td>Ilon</td>
+        <td>Musk</td>
+        <td>45</td>
+        <td>hetero</td>
+        <td>m</td>
+    </tr>
+    <tr id="tab3">
+        <td>Adam</td>
+        <td>Smidth</td>
+        <td>35</td>
+        <td>hetero</td>
+        <td>m</td>
+    </tr>
+    <tr id="tab3">
+        <td>Bill</td>
+        <td>Gates</td>
+        <td>65</td>
+        <td>gay</td>
+        <td>m</td>
+    </tr>
+    <tr id="tab3">
+        <td>Megan</td>
+        <td>Fox</td>
+        <td>34</td>
+        <td>lesbian</td>
+        <td>f</td>
+    </tr>
+    </table>
+
+</body>

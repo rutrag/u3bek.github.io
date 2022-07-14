@@ -1,0 +1,135 @@
+header {
+	background-color:gray;
+	border: 3px solid silver
+}
+
+header h1 {
+	color:white;
+	margin:10px;
+	padding:10px;
+	background-color:rgba(0, 255, 255, 0.3)
+}
+
+#logo {
+	padding:5px;
+	margin:10px;
+	border-radius:5px;
+	border:solid 1px rgb(206, 206, 206);
+	background-color:grey;
+	color:rgb(187, 56, 187);
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	float:inline-start;
+}
+
+.l_form {
+	float: right;
+}
+
+.login {
+	width: 80px;
+}
+
+
+pre {
+	border: 3px solid DodgerBlue;
+	padding: 30px;
+}
+
+p1 {
+	font-family: counter;
+	font-size: 120%;
+	background-color: pink;
+	border: solid 1px purple;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+img {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+#ulmain, #ul2 {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 1%;
+	overflow: hidden;
+}
+
+#ulmain {
+	width: 100%;
+}
+
+.li1 {
+	float:left;
+	width: 16.5%;
+}
+
+.li2 {
+	float:left;
+	width:33%;
+}
+
+#li2 {
+	width:100%;
+}
+
+.li1 a {
+	background-color: rgb(187, 56, 187);
+	color: white;
+	text-decoration:none;
+	padding: 10px 15px;
+	text-align:center;
+	display:block;
+}
+
+.li2 a {
+	background-color: grey;
+	color: white;
+	text-decoration:none;
+	padding: 10px 15px;
+	text-align:center;
+	display:block;
+}
+
+a:hover {
+	background-color: rgb(139, 29, 139);
+}
+
+#date {
+	float:left;
+
+}
+
+.fav_plc1, .fav_plc2 {
+	padding: 10px;
+	margin: 10px;
+	background-color: lightgrey;
+	float: left;
+}
+
+.form1, .form2 {
+	background-color: grey;
+	display: block;
+}
+
+th, td {
+	 border:1px solid rgb(106, 181, 255);
+	 background-color: rgb(241, 241, 241);
+	 padding: 10px;
+}
+
+table {
+	padding: 5px;
+	border:2px solid DodgerBlue;
+	background-color: rgb(196, 196, 196);
+}
+
+th{
+	color: red;
+}
+
+button {
+	margin: 10px 20px;
+}

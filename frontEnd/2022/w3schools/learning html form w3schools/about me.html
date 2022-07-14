@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+  <head>
+    <title>About me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="I, me, about me">
+    <meta name="description" content="the page about me">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+
+      .menu a {
+        background-color: lightgrey;
+        padding: 10px;
+        margin-top: 8px;
+        display: block;
+        width: 100%;
+        color:darkslategray;
+        text-decoration: none;
+        text-shadow: 1px 1px  rgb(255, 255, 255) ;
+      }
+
+      .menu a:hover {
+        background-color: white;
+      }
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    .right {
+      background-color: #e5e5e5;
+      float: left;
+      width: 20%;
+      padding: 15px;
+      margin-top: 7px;
+      text-align: center;
+    }
+
+      @media only screen and (max-width: 600px) {
+        .menu, .main, .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="background-color: rgb(103, 50, 68);">
+    <div style="text-align:center;
+      border: solid 2px darkslategrey; background-color: rgb(90, 160, 160);
+      border-radius: 2px; color:rgb(226, 226, 226);
+      text-shadow: 2px 2px 2px rgb(182, 0, 0);">
+      <h1>This page about me</h1>
+    </div>
+
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="index.htm">Main</a>
+        <a href="tags.htm">HTML tags</a>
+        <a href="links.htm">HTML links</a>
+        <a href="Style Attribute.htm">HTML styles</a>
+        <a href="HTML tables1.htm">HTML tables</a>
+        <a href="about me.html">About me</a>
+      </div>
+      <div class="main">
+        <p>I was born in <abbr title="United of Soviet Socialist Republics">USSR </abbr>.
+           It's my first site. I've been doing this since spring 2022</p>
+      </div>
+
+      <div class="right">
+        <p>My notice</p>
+        <p>I do not know, what I should write</p>
+      </div>
+
+     <div>
+      <img src="images/I'm looking at you.jpg" alt="it's me"
+        style="width:100%; margin: 10px">
+     </div>
+    </div>
+
+  </body>

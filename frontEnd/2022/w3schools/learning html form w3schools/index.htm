@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>HTML learning</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="description" content="The practice of html learning">
+	<meta name="autor" content="Artur Gadelshin">
+	<meta http-equiv="refresh" content="60">
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<base target="_top">
+	<!-- href="https://yoursite.com" is used for full URL to link to a style sheet
+		 href="/yourfolder/styles.css" is used to link to a sheet located in the html folder on the current web site
+		 href="style.css" is used to link to a style sheet located in the same folder as the current page
+	-->
+</head>
+<body>
+	<!-- Welcome in my first own site.
+	This site was created to learn HTML -->
+	<header>
+		<h1><span id="logo">HTML</span><small style="float:inline-end">learning</small>
+			<form class="l_form" action="/action_page.php">
+				<input placeholder="login" class="login" type="text" id="login" name="login">
+				<input placeholder="password" class="login" type="password" id="pass">
+				<input class="login_b" type="submit" value="Sign In">
+			</form>
+		</h1>
+	</header>
+	<hr>
+	<nav>
+		<ul id="ulmain">
+			<li class="li1"><a href="index.htm" title="Go to HTML learning main page"> Main page</a></li>
+			<li class="li1"><a href="tags.htm" title="Go to HTML tags"> HTML tags</a></li>
+			<li class="li1"><a href="forms.htm" title="Go to HTML forms"> HTML forms</a></li>
+			<li class="li1"><a href="Style Attribute.htm" title="Go to HTML styles"> HTML styles</a></li>
+			<li class="li1"><a href="HTML tables1.htm">HTML tables</a></li>
+			<li class="li1"><a href="about me.html" title="Go to short discribe about me"> About me</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<ul id="ul2">
+		<li class="li2"><a href="#img1"> jump to image</a></li>
+		<li class="li2"><a href="#I"> jump to about autor</a></li>
+		<li class="li2"><a href="#table1"> jump to a table</a></li>
+	</ul>
+	<hr>
+	<button onclick="document.location='about me.html'"> JS about me </button>
+	<button type="button" onclick="document.location='HTML tables1.htm'"> JS Tables </button>
+	<button type="button" onclick="document.getElementById('date').innerHTML=Date()">What time is it?</button>
+	<p1 id="date"></p1>
+	<div style="margin:10px">
+		<button type="button" onclick="emoji1(0)">click me softly&#128151</button>
+		<script>
+			function emoji1(sw) {
+				var pic;
+				if (sw == 0) {
+					pic = "emoji/)))).png"
+				} 
+
+				else {
+					pic = "emoji/xDDDD.png"
+				}
+
+				document.getElementById('Emoji').
+				src = pic;
+			}
+		</script>
+		<noscript>Turn on JavaScript into you browser</noscript>
+		<img id="Emoji" src="emoji/)).png" style="width:200px">
+		<button type="button" onclick="emoji1(1)">click me rudely&#128520</button>
+	</div>
+		<p1>
+			<q>To be rather than to seem</q>is an english translate to the latin quote:
+		</p1>
+		<blockquote cite="https://en.wikipedia.org/wiki/Esse_quam_videri">
+		Esse quam videri
+		</blockquote>
+	<div class="fav_plc1">
+		<p>Choose your favorite place</p>
+		<form class="form1">
+			<input type="radio" id="pussy" name="fav_plc" value="pussy">
+			<label for="pussy">Pussy</label>
+			<input type="checkbox" id="ass" name="fav_plc" value="ass">
+			<label for="ass">ass</label>
+			<input type="text" id="mouth" name="fav_plc" value="mouth">
+			<lable for="mouth">mouth</lable>
+		</form>
+	</div>
+	<div class="fav_plc2">
+		<p>Select the side of conflict</p>
+		<form action="/action_page.php" class="form2">
+			<label for="countries">&#9755</label>
+			<select id="countries" name="counties" size="3">
+				<option value="USA">USA</option>
+				<option value="China">China</option>
+				<option value="Russia" selected>Russia</option>
+				<option value="India">India</option>
+				<option value="UK">UK</option>
+				<option value="France">France</option>
+				<option value="Germany">Germany</option>
+				<option value="Saudi Arabia">Saudi Arabia</option>
+				<option value="Japan">Japan</option>
+				<option value="South Korea">South Korea</option>
+				<option value="Italy">Italy</option>
+				<option value="Australia">Australia</option>
+			</select>
+			<p id="countries_b"><input type="submit" value="Ok"></p>
+		</form>	
+	</div>
+	<div class="f_img">
+		<img src="images/balls.jpg" alt="balls" title="click on football ball"
+		usemap="#ballsmap" style="height: 200px; width: 400px">
+		<map name="ballsmap">
+			<area shape="rect" coords="30, 30, 180, 180" href="f_ball.htm"
+			onclick="myFunction()">
+			<area shape="circle" coords="285, 110, 80" href="b_ball.htm">
+		</map>			
+		<script>
+			function myFunction() {
+			alert("You clicked on the football ball")
+			}
+		</script>
+	</div>
+	<table id="table1">
+		<tr>
+			<th>Favorive cities</th>
+			<th style="color:green">Country</th>
+			<th>Local language</th>
+			<th>Population</th>
+		</tr>
+		<tr>
+			<td>Seattle</td>
+			<td>U&nbsp&nbsp&nbsp&nbsp&nbspS&nbsp&nbsp&nbsp&nbsp&nbspA</td>
+			<td>English</td>
+			<td>800000</td>
+		</tr>
+	</table>
+	<hr>
+	<h3>HTML List</h3>
+	<ul>
+		<li>Protein</li>
+		<li>Oil</li>
+		<li>carb</li>
+		<li>tea</li>
+	</ul>
+	<ul style="background-color:lightgrey">
+		<li>black tea</li>
+		<li>green tea</li>
+	</ul>
+	<p>list-style-type</p>
+	<ul>
+		<li style="list-style-type:disc;">disk</li>
+		<li style="list-style-type:circle">circle</li>
+		<li style="list-style-type:square">square</li>
+		<li style="list-style-type:none">none</li>
+	</ul>
+	<ol>
+		<li>ol type
+			<ol type="A">
+				<li>type A</li>
+				<li>type A</li>
+				<li>type A</li>
+			</ol>
+		</li>
+		<li style="background-color:lightgrey">ol type
+			<ol type="I">
+				<li>type I</li>
+				<li>type I</li>
+				<li>type I</li>
+			</ol>
+		</li>	
+		<li>ol start="15"
+			<ol start="15">
+				<li>protein</li>
+				<li>carb</li>
+				<li>oil</li>
+			</ol>
+		</li>
+		<li style="background-color:lightgrey">type="i" start="15"
+			<ol type="i" start="15">
+				<li>protein</li>
+				<li>carb</li>
+				<li>oil</li>
+			</ol>
+		</li>
+	</ol>
+	<dl>
+		<dt>protein</dt>
+		<dd>large biomolecules and macromolecules that comprise one or more long chains of amino acid residues.</dd>
+		<dt>oil</dt>
+		<dd>any nonpolar chemical substance that is composed primarily of hydrocarbons and is both hydrophobic (does not mix with water, literally "water fearing") and lipophilic (mixes with other oils, literally "fat loving").</dd>
+		<dt>carb</dt>
+		<dd>A sugar, starch, or cellulose that is a food source of energy for an animal or plant</dd>
+	</dl>
+	<hr>
+	<h2>HTML Quotation and Citation Elements</h2>
+	<pre>
+< abbr title="."> < /abbr>		<abbr>Abbreviation or acronym</abbr>
+< bdo dir="rtl"or"ltr"> < /bdo>		<bdo dir="ltr">Text direction</bdo>
+< cite> < /cite>			<cite>	Aristocrat</cite> is the song of Morgenstern</cite>
+< q> < /q>				Defines <q>a short inline quotation</q>
+< address> < /address>		<address>Contact information for the owner of a document</address>
+< blockquote cite="url"> < /blockquote>	<blockquote cite=w.ww> Section that is quoted from another source</blockquote>
+	</pre>
+	<h3>HTML &lt;bdo&gt; for Bi-Directional Override</h3>
+	<p>If your browser supports bi-directional override (bdo) , the next line will be written from right to left (rtl):</p>
+	<bdo dir="rtl">This line will be written from right to left</bdo>
+	<hr>
+	<footer>
+		<address>
+			Written by <a id="I" href="https://vk.com/poccua" target="_blank">Artur G.</a><br>
+			Krasnodar<br>
+			Russia
+		<small> < address>< /address></small>
+		</adress>
+	</footer>
+</boby>
+</html>
